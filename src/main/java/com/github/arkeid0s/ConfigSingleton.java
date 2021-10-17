@@ -8,7 +8,7 @@ public final class ConfigSingleton
 	private static ConfigSingleton INSTANCE;
 	private String selectedServer = "";
 	private final String prefix = "$";
-	private final String token = "ODk3OTE5Mzc2ODE1MTY1NTAw.YWcqlQ.d2UPt6haAuwZd0a5AfDI831-a0o";
+	private final String token = "";
 	private DiscordApi api = new DiscordApiBuilder().setToken(token).login().join();
 	
 	private ConfigSingleton()
