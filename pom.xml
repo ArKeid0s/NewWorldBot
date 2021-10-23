@@ -43,8 +43,11 @@
                 <version>3.0.3</version>
                 <configuration>
                     <processTypes>
-                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Main</web>
+                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* com.github.arkeid0s.Main
+                            -Dserver.port=8080
+                        </web>
                     </processTypes>
+                    <jdkVersion>17</jdkVersion>
                 </configuration>
             </plugin>
         </plugins>

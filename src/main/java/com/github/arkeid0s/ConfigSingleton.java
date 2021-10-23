@@ -8,7 +8,6 @@ public final class ConfigSingleton
 	private static ConfigSingleton INSTANCE;
 	private String selectedServer = "";
 	private final String prefix = "$";
-	private DiscordApi api = new DiscordApiBuilder().setToken(System.getenv().get("TOKEN")).login().join();
 	
 	private ConfigSingleton()
 	{
@@ -25,11 +24,6 @@ public final class ConfigSingleton
 	}
 	
 	// getters and setters
-	public DiscordApi GetApi()
-	{
-		return api;
-	}
-	
 	public String GetSelectedServer()
 	{
 		return selectedServer;

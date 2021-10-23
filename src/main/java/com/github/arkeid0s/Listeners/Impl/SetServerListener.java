@@ -24,7 +24,7 @@ public class SetServerListener implements MessageCreateListener
 			}
 			configSingleton.SetSelectedServer(args[1]);
 			event.getChannel().sendMessage("Server set to : " + configSingleton.GetSelectedServer());
-			configSingleton.GetApi().updateActivity(ActivityType.WATCHING, configSingleton.GetSelectedServer() + " server");
+			event.getApi().updateActivity(ActivityType.WATCHING, configSingleton.GetSelectedServer() + " server");
 		}
 	}
 }
