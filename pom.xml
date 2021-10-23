@@ -44,7 +44,7 @@
                 <configuration>
                     <processTypes>
                         <web>java $JAVA_OPTS -cp target/classes:target/dependency/*
-                            com.github.arkeid0s.Main -Dserver.port=$PORT
+                            com.github.arkeid0s.Main -p $PORT
                         </web>
                     </processTypes>
                     <jdkVersion>17</jdkVersion>
